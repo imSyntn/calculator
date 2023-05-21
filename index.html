@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/015f2e7ce4.js" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <h1>Calculator</h1>
+      <div class="container">
+          <input type="text" id="inp">
+          <button onclick="clearResult()" class="btn btn-ac">AC</button>
+          <button onclick="calculateResult()" class="btn btn-ent">Enter</button>
+          <button onclick="updateResult('/')" class="btn btn/">/</button>
+          <button onclick="updateResult('*')" class="btn btnX">*</button>        
+          <button onclick="updateResult('-')" class="btn btnmin">-</button>
+          <button onclick="updateResult('7')" class="btn btn7">7</button>
+          <button onclick="updateResult('8')" class="btn btn8">8</button>
+          <button onclick="updateResult('9')" class="btn btn9">9</button>
+          <button onclick="updateResult('+')" class="btn btn-plus">+</button>
+          <button onclick="updateResult('4')" class="btn btn4">4</button>
+          <button onclick="updateResult('5')" class="btn btn5">5</button>
+          <button onclick="updateResult('6')" class="btn btn6">6</button>
+          <button onclick="updateResult('1')" class="btn btn1">1</button>
+          <button onclick="updateResult('2')" class="btn btn2">2</button>
+          <button onclick="updateResult('3')" class="btn btn3">3</button>
+          <button onclick="updateResult('0')" class="btn btn0">0</button>
+          <button onclick="updateResult('.')" class="btn btn.">.</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
