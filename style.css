@@ -1,21 +1,28 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1 {
     color: aliceblue;
+    margin: 0;
+    margin-bottom: 6px;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .parent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    margin-top: 200px;
+    padding: 20px;
+    border: 1px solid rgb(1, 188, 230);
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 .container {
     display: grid;
@@ -45,12 +52,11 @@ button {
 .btn {
     font-weight: bolder;
     font-size: 18px;
-    border: 2px solid rgb(171, 171, 171);
 }
 
 .btn:hover {
-    background-color: black;
-    color: rgb(171, 171, 171);
+    background-image: linear-gradient(to right, #6b11cb70 0%, #2574fc71 100%);
+    transition: 0.3s;
 }
 
 .btn0 {
